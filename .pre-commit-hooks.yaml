@@ -1,0 +1,42 @@
+- id: pmd
+  name: PMD
+  description: Runs PMD static code analysis on files
+  entry: pmd
+  language: python
+  pass_filenames: false
+- id: spotbugs
+  name: Spotbugs
+  description: Runs Spotbugs binary code analysis on files
+  entry: spotbugs
+  language: python
+  pass_filenames: false
+- id: spotless
+  name: Spotless
+  description: Runs Spotless analysis on files
+  entry: spotless
+  language: python
+  pass_filenames: false
+- id: snyk
+  name: Snyk
+  description: Runs snyk on files
+  entry: snyk-test
+  language: python
+  pass_filenames: false
+- id: unit-test
+  name: Unit Test
+  description: Runs unit tests
+  entry: unit-test
+  language: python
+  pass_filenames: false
+- id: integration-test
+  name: Integration Test
+  description: Runs integration tests
+  entry: integration-test
+  language: python
+  pass_filenames: false
+- id: code-coverage
+  name: Code-Coverage
+  description: Checks current code coverage and enforces 80% minimum coverage
+  entry: code-coverage
+  language: python
+  pass_filenames: false
