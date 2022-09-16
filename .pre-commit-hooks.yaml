@@ -40,3 +40,9 @@
   entry: code-coverage
   language: python
   pass_filenames: false
+- id: validate_commit_msg
+  name: validate_commit_msg
+  description: Check commit message format so Jira can auto determine what is being released
+  entry: ./hooks/validate_commit_msg.sh
+  language: script
+  stages: [commit-msg]
