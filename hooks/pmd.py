@@ -1,7 +1,7 @@
 import subprocess
 
 def main():
-    status, output = subprocess.getstatusoutput('mvn pmd:check')
+    status, output = subprocess.getstatusoutput('./gradlew pmdMain')
     print(output)
     return 0 if status==0 else 1
 

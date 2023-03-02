@@ -11,7 +11,7 @@ def get_coverage(path):
                 if not coverage_percentage.is_empty_element :
                     return int(coverage_percentage.get_text().removesuffix("%"))
     else:
-        print("Jacoco code coverage report is not found. Please run `mvn test` first.")
+        print("Jacoco code coverage report is not found. Please run `./gradlew test` first.")
             
     return 0
 

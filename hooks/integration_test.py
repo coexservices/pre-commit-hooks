@@ -1,7 +1,7 @@
 import subprocess
 
 def main():
-    status, output = subprocess.getstatusoutput('mvn failsafe:integration-test')
+    status, output = subprocess.getstatusoutput('./gradlew clean integrationTest')
     print(output)
     return 0 if status==0 else 1
 

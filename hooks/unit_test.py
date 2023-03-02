@@ -1,7 +1,7 @@
 import subprocess
 
 def main():
-    status, output = subprocess.getstatusoutput('mvn test')
+    status, output = subprocess.getstatusoutput('./gradlew test')
     print(output)
     return 0 if status==0 else 1
 
