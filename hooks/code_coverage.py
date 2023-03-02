@@ -16,7 +16,7 @@ def get_coverage(path):
     return 0
 
 def main():
-    path = Path("target/site/jacoco/index.html")
+    path = Path("build/reports/jacoco/index.html")
     coverage = get_coverage(path)
     if coverage < 80:
         print(f'Minimum 80% code coverage is required. Current coverage is {coverage}%. Check {path.absolute()} for current coverage report.')
