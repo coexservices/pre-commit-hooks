@@ -2,7 +2,7 @@
 
 ARGS=$1
 COMMIT_MSG=$(head -n1 "$ARGS") # Get the first line of a multiline commit msg
-PATTERN="^[A-Z][A-Z0-9]+-[0-9]+: .*" # Format of 'JIRA1-123: ...'
+PATTERN="^(\[dependabot\]|[A-Z][A-Z0-9]+-[0-9]+): .*" # Format of 'JIRA1-123: ...'
 
 if ! [[ "$COMMIT_MSG" =~ $PATTERN ]]; then
     cat "$COMMIT_MSG"
